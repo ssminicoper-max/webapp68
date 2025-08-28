@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fade Out Siblings on Hover</title>
+<style>
+  fieldset.preview {
+    width: 720px;
+    border: 1px solid #cfcfd4;
+    padding: 10px 12px;
+    background: #fff;
+  }
+  fieldset.preview legend {
+    font-weight: 700;
+    font-family: "Times New Roman", Times, serif;
+  }
+
+  .case-list {
+    display: flex;
+    gap: 20px;
+    font-family: Georgia, "Times New Roman", serif;
+  }
+
+  .case-list span {
+    cursor: pointer;
+    transition: opacity 0.3s;
+  }
+  .case-list:hover span {
+    opacity: 0.3;
+  }
+  .case-list span:hover {
+    opacity: 1;
+  }
+</style>
+</head>
+<body>
+
+<fieldset class="preview">
+  <div class="case-list">
+    <span>Case 1</span>
+    <span>Case 2</span>
+    <span>Case 3</span>
+  </div>
+
+</fieldset>
+
+</body>
+</html>

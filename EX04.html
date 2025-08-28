@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transform Navigation</title>
+  <style>
+    fieldset.preview{
+      width: 720px;
+      border: 1px solid #cfcfd4;
+      padding: 10px 12px;
+      background: #fff;
+    }
+    fieldset.preview legend{
+      font-weight: 700;
+      font-family: "Times New Roman", Times, serif;
+    }
+
+    .nav{
+      display: flex;
+      gap: 28px;
+      align-items: center;
+      font-family: Georgia, "Times New Roman", serif;
+    }
+    .nav a{
+      position: relative;
+      text-decoration: none;
+      color: #222;
+      padding: 6px 10px;
+      border-radius: 2px;
+      transition: transform .18s ease, box-shadow .18s ease, background-color .18s ease;
+      outline: none;
+    }
+
+    .nav a:hover,
+    .nav a:focus-visible{
+      background: rgb(224, 255, 84);
+      transform: translateY(-2px) scale(1.03);
+      box-shadow: 0 2px 0 rgba(0,0,0,.25);
+    }
+  </style>
+</head>
+<body>
+
+  <fieldset class="preview">
+    <table>Preview:</table>
+    <nav class="nav" aria-label="Main">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+  </fieldset>
+
+</body>
+</html>

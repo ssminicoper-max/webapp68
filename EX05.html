@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rows</title>
+<style>
+  fieldset.preview{
+    width: 860px;
+    border: 1px solid #cfcfd4;
+    padding: 10px 12px;
+    background: #fff;
+  }
+  fieldset.preview legend{
+    font-weight: 700;
+    font-family: "Times New Roman", Times, serif;
+  }
+
+  .gallery-vertical{
+    height: 260px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    border: 1px solid #ddd;
+    background: #f8f8f8;
+    padding: 8px;
+    scroll-snap-type: y mandatory; 
+  }
+
+  .row{
+    display: flex;
+    gap: 12px;
+    margin-bottom: 12px;
+    scroll-snap-align: start;
+  }
+
+  .card{
+    flex: 0 0 160px;
+    height: 160px;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 0 0 1px #e6e6e6 inset;
+  }
+  .card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+</style>
+</head>
+<body>
+
+<fieldset class="preview">
+  <div class="gallery-vertical" aria-label="Vertical scrolling rows that snap">
+    <div class="row">
+      <div class="card"><img src="1.jpg" ></div>
+      <div class="card"><img src="2.webp" ></div>
+      <div class="card"><img src="3.webp"></div>
+      <div class="card"><img src="4.jpg" ></div>
+      <div class="card"><img src="5.jpeg"></div>
+    </div>
+
+    <div class="row">
+      <div class="card"><img src="6.jpg" ></div>
+      <div class="card"><img src="7.webp" ></div>
+      <div class="card"><img src="bll.jpeg" ></div>
+      <div class="card"><img src="9.jpg" ></div>
+      <div class="card"><img src="10.webp"></div>
+    </div>
+  </div>
+</fieldset>
+
+</body>
+</html>

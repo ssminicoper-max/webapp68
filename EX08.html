@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>8. Popout Menu on Hover/Focus</title>
+<style>
+  fieldset.preview {
+    width: 720px;
+    border: 1px solid #cfcfd4;
+    padding: 10px 12px;
+    background: #fff;
+  }
+  fieldset.preview legend {
+    font-weight: 700;
+    font-family: "Times New Roman", Times, serif;
+  }
+
+  .menu {
+    position: relative;
+    display: inline-block;
+  }
+
+  .menu-button {
+    width: 50px;
+    height: 50px;
+    background: violet;
+    border: none;
+    cursor: pointer;
+  }
+
+  .menu-content {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    min-width: 120px;
+    background: #f9f9f9;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 6px rgba(0,0,0,.2);
+    z-index: 1;
+  }
+
+  .menu-content a {
+    display: block;
+    padding: 8px 12px;
+    color: #000;
+    text-decoration: none;
+  }
+  .menu-content a:hover {
+    background: #eee;
+  }
+
+  .menu:hover .menu-content,
+  .menu:focus-within .menu-content {
+    display: block;
+  }
+</style>
+</head>
+<body>
+
+<fieldset class="preview">
+  <div class="menu">
+    <button class="menu-button" aria-haspopup="true" aria-expanded="false"></button>
+    <div class="menu-content" role="menu">
+      <a href="#" role="menuitem">Profile</a>
+      <a href="#" role="menuitem">Settings</a>
+      <a href="#" role="menuitem">Logout</a>
+    </div>
+  </div>
+
+</fieldset>
+
+</body>
+</html>
