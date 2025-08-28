@@ -1,21 +1,20 @@
 nav{
     padding-right: 10px;
-    margin-right: 10px;
+    margin-right: 20px;
     float: right;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    background-color:bisque;
+   
 }
 
 img{
-    width: 80px;
-    height: 100px;
-    border: 2px;
-    border-style: solid;
-    border-color: brown;
+    width: 350px;
+    height: 370px;
+    border: 2px solid black;
+    border-radius: 50%;
 }
 
 aside {
-    margin-bottom: 50px;
+    margin-right: 50px;
     float: right;
-    background-color: lightgray;
+    
 }
